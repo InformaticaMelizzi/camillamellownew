@@ -9,41 +9,47 @@ my $prefs = preferences('plugin.camillamellow');
 sub initPlugin {
     my $class = shift;
     
-    # Registra settings
-    Slim::Web::Pages->addPageFunction(
-        'plugins/CamillaMellow/settings.html',
-        \&settingsPage
-    );
+    # Registra settings per player
+    Slim::Control::Request::addDispatch(
+        ['camillamellow', 'status'], [0, 1, 1, \&status]);
     
     $class->SUPER::initPlugin(@_);
 }
 
-sub settingsPage {
-    my ($client, $params, $callback, $httpClient, $response) = @_;
+sub getDisplayName {
+    return 'PLUGIN_CAMILLAMELLOW';
+}
+
+sub playerSettings {
+    my ($class, $client, $params) = @_;
     
-    # Gestisci upload FIR
-    if ($params->{fir_left} || $params->{fir_right}) {
-        # Salva file FIR
-        if ($params->{fir_left}) {
-            my $left = $params->{fir_left};
-            # Salva in /media/hdd/system/fir_left.wav
-        }
-        if ($params->{fir_right}) {
-            my $right = $params->{fir_right};
-            # Salva in /media/hdd/system/fir_right.wav
-        }
+    return unless $client;
+    
+    my $firLeft = $prefs->client($client)->get('fir_left') || 'None';
+    my $firRight = $prefs->client($client)->get('fir_right') || 'None';
+    my $enabled = $prefs->client($client)->get('enabled') || 0;
+    
+    return {
+        fir_left => $firLeft,
+        fir_right => $firRight,
+        enabled => $enabled,
+    };
+}
+
+sub setPlayerSettings {
+    my ($class, $client, $params) = @_;
+    
+    return unless $client;
+    
+    if (exists $params->{fir_left}) {
+        $prefs->client($client)->set('fir_left', $params->{fir_left});
     }
-    
-    # Mostra form upload
-    my $content = '
-    <h2>CamillaMellow DSP Settings</h2>
-    <form method="POST" enctype="multipart/form-data">
-        <p>Upload FIR Left: <input type="file" name="fir_left" accept=".wav"></p>
-        <p>Upload FIR Right: <input type="file" name="fir_right" accept=".wav"></p>
-        <p><input type="submit" value="Upload FIR Files"></p>
-    </form>';
-    
-    $callback->($client, $params, $content, $response);
+    if (exists $params->{fir_right}) {
+        $prefs->client($client)->set('fir_right', $params->{fir_right});
+    }
+    if (exists $params->{enabled}) {
+        $prefs->client($client)->set('enabled', $params->{enabled});
+    }
 }
 
 1;

@@ -3,3 +3,6 @@ PLUGIN_CAMILLAMELLOW
 	
 PLUGIN_CAMILLAMELLOW_DESC
 	EN	FIR processing with REW integration and CamillaDSP
+	
+PLUGIN_CAMILLAMELLOW_SETTINGS
+	EN	CamillaMellow DSP Settings
