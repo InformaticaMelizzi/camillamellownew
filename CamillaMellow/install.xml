@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension>
+    <name>PLUGIN_CAMILLAMELLOW</name>
+    <module>Plugins::CamillaMellow::Plugin</module>
+    <version>0.2.0</version>
+    <description>PLUGIN_CAMILLAMELLOW_DESC</description>
+    <creator>Informatica Melizzi</creator>
+    <email>support@informaticamelizzi.it</email>
+    <link>https://github.com/InformaticaMelizzi/camillamellow-lms-plugin</link>
+    <category>tools</category>
+    <targetApplication>
+        <id>SqueezeboxServer</id>
+        <minVersion>9.0</minVersion>
+        <maxVersion>*</maxVersion>
+    </targetApplication>
+</extension>

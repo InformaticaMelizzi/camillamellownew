@@ -1,0 +1,29 @@
+[% PROCESS settings/header.html %]
+
+<div class="settings">
+<h2>CamillaMellow DSP Settings</h2>
+
+<div class="prefDesc">
+<input type="checkbox" id="pref_camillamellow_enabled" name="pref_camillamellow_enabled" [% prefs.pref_camillamellow_enabled %]>
+<label for="pref_camillamellow_enabled">Enable CamillaMellow</label>
+</div>
+
+<div class="prefDesc">
+<label for="pref_camillamellow_samplerate">Sample Rate:</label>
+<select id="pref_camillamellow_samplerate" name="pref_camillamellow_samplerate">
+<option value="44100" [% IF prefs.pref_camillamellow_samplerate == '44100'; "selected"; END %]>44.1 kHz</option>
+<option value="48000" [% IF prefs.pref_camillamellow_samplerate == '48000'; "selected"; END %]>48 kHz</option>
+<option value="96000" [% IF prefs.pref_camillamellow_samplerate == '96000'; "selected"; END %]>96 kHz</option>
+<option value="192000" [% IF prefs.pref_camillamellow_samplerate == '192000'; "selected"; END %]>192 kHz</option>
+</select>
+</div>
+
+<div class="prefDesc">
+<label>FIR Files Upload:</label>
+<input type="file" id="fir_left" name="fir_left" accept=".wav">
+<input type="file" id="fir_right" name="fir_right" accept=".wav">
+</div>
+
+</div>
+
+[% PROCESS settings/footer.html %]
