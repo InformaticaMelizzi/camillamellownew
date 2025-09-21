@@ -1,17 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <extension>
-    <name>CamillaMellow DSP</name>
-    <module>Plugins::CamillaMellow::Plugin</module>
-    <version>0.2.0</version>
-    <description>FIR processing with REW integration and CamillaDSP</description>
-    <creator>Informatica Melizzi</creator>
-    <email>support@informaticamelizzi.it</email>
-    <homepageURL>https://github.com/InformaticaMelizzi/camillamellownew</homepageURL>
-    <link>https://github.com/InformaticaMelizzi/camillamellownew</link>
-    <category>audio</category>
-    <targetApplication>
-        <id>SqueezeboxServer</id>
-        <minVersion>7.0</minVersion>
-        <maxVersion>*</maxVersion>
-    </targetApplication>
+	<id>91d8fb10-camilla-11e3-ac10-0800200c9a66</id>
+	<name>PLUGIN_CAMILLAMELLOW</name>
+	<module>Plugins::CamillaMellow::Plugin</module>
+	<version>0.2.0</version>
+	<description>PLUGIN_CAMILLAMELLOW_DESC</description>
+	<creator>Informatica Melizzi</creator>
+	<email>support@informaticamelizzi.it</email>
+	<defaultState>enabled</defaultState>
+	<playerMenu>SETTINGS</playerMenu>
+	<homepageURL>https://github.com/InformaticaMelizzi/camillamellownew</homepageURL>
+	<optionsURL>plugins/CamillaMellow/settings/basic.html</optionsURL>
+	<type>2</type>
+	<targetApplication>
+		<id>Logitech Media Server</id>
+		<minVersion>7.8</minVersion>
+		<maxVersion>*</maxVersion>
+	</targetApplication>
 </extension>
