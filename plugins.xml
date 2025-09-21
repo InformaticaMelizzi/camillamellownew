@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extensions>
     <plugins>
-        <plugin name="CamillaMellow" version="0.2.0" minTarget="9.0" maxTarget="*">
+        <plugin name="CamillaMellow" version="0.2.0" minTarget="7.0" maxTarget="*">
             <title lang="EN">CamillaMellow DSP</title>
             <desc lang="EN">FIR processing with REW integration and CamillaDSP</desc>
-            <category>tools</category>
+            <category>audio</category>
             <creator>Informatica Melizzi</creator>
             <email>support@informaticamelizzi.it</email>
             <homepageURL>https://github.com/InformaticaMelizzi/camillamellownew</homepageURL>
             <link>https://github.com/InformaticaMelizzi/camillamellownew</link>
             <url>https://raw.githubusercontent.com/InformaticaMelizzi/camillamellownew/main/packages/CamillaMellow-0.2.0.zip</url>
-            <sha>19dcd98374dd4c8a8ec45dc997840aba87a04d75</sha>
+            <sha>bd69be75b08a6b51a2102615ee59167b53c885a7</sha>
         </plugin>
     </plugins>
 </extensions>

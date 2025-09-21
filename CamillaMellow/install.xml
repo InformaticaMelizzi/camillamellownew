@@ -6,11 +6,14 @@
     <description>PLUGIN_CAMILLAMELLOW_DESC</description>
     <creator>Informatica Melizzi</creator>
     <email>support@informaticamelizzi.it</email>
-    <link>https://github.com/InformaticaMelizzi/camillamellow-lms-plugin</link>
-    <category>tools</category>
+    <link>https://github.com/InformaticaMelizzi/camillamellownew</link>
+    <category>audio</category>
     <targetApplication>
         <id>SqueezeboxServer</id>
-        <minVersion>9.0</minVersion>
+        <minVersion>7.0</minVersion>
         <maxVersion>*</maxVersion>
     </targetApplication>
+    <changes>
+        <change>Initial release with FIR REW integration</change>
+    </changes>
 </extension>
