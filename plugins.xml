@@ -7,9 +7,9 @@
             <category>tools</category>
             <creator>Informatica Melizzi</creator>
             <email>support@informaticamelizzi.it</email>
-            <homepageURL>https://github.com/InformaticaMelizzi/camillamellow-lms-plugin</homepageURL>
-            <link>https://github.com/InformaticaMelizzi/camillamellow-lms-plugin</link>
-            <url>https://raw.githubusercontent.com/InformaticaMelizzi/camillamellow-lms-plugin/main/packages/CamillaMellow-0.2.0.zip</url>
+            <homepageURL>https://github.com/InformaticaMelizzi/camillamellownew</homepageURL>
+            <link>https://github.com/InformaticaMelizzi/camillamellownew</link>
+            <url>https://raw.githubusercontent.com/InformaticaMelizzi/camillamellownew/main/packages/CamillaMellow-0.2.0.zip</url>
             <sha>19dcd98374dd4c8a8ec45dc997840aba87a04d75</sha>
         </plugin>
     </plugins>
