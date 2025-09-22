@@ -1,0 +1,48 @@
+<div class="settings">
+    <h2>Mellow-Dsp-FIR - PCM/WAV Processing</h2>
+
+    <div class="pref">
+        <input type="checkbox" name="enabled" id="enabled" [% prefs.enabled %]>
+        <label for="enabled">Enable Mellow-Dsp-FIR PCM Processing</label>
+    </div>
+
+    <div class="pref">
+        <label for="output_format">Output Format:</label>
+        <select name="output_format" id="output_format">
+            <option value="pcm">PCM Pass-through</option>
+            <option value="wav" [% IF prefs.output_format == 'wav' %]selected[% END %]>WAV Output</option>
+        </select>
+    </div>
+
+    <div class="pref">
+        <label for="pcm_sample_rate">PCM Sample Rate:</label>
+        <select name="pcm_sample_rate" id="pcm_sample_rate">
+            <option value="44100">44.1 kHz</option>
+            <option value="48000">48 kHz</option>
+            <option value="96000">96 kHz</option>
+            <option value="192000">192 kHz</option>
+            <option value="384000">384 kHz</option>
+            <option value="768000" [% IF prefs.pcm_sample_rate == '768000' %]selected[% END %]>768 kHz</option>
+        </select>
+    </div>
+
+    <div class="pref">
+        <label for="pcm_bit_depth">PCM Bit Depth:</label>
+        <select name="pcm_bit_depth" id="pcm_bit_depth">
+            <option value="16">16-bit</option>
+            <option value="24">24-bit</option>
+            <option value="32" [% IF prefs.pcm_bit_depth == '32' %]selected[% END %]>32-bit</option>
+        </select>
+    </div>
+
+    <div class="pref">
+        <label for="pcm_dither">Dithering:</label>
+        <select name="pcm_dither" id="pcm_dither">
+            <option value="none">None</option>
+            <option value="triangular">Triangular</option>
+            <option value="e_weighted" [% IF prefs.pcm_dither == 'e_weighted' %]selected[% END %]>E-Weighted</option>
+        </select>
+    </div>
+
+    <input type="submit" name="saveSettings" value="Save Settings" class="stdclick">
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension>
+    <name>Mellow-Dsp-FIR</name>
+    <module>Plugins::MellowDspFIR::Plugin</module>
+    <version>0.2.0-WAV</version>
+    <description>WAV PCM processing with FIR support</description>
+    <creator>Informatica Melizzi</creator>
+    <email>support@informaticamelizzi.it</email>
+    <homepageURL>https://github.com/InformaticaMelizzi/camillamellownew</homepageURL>
+    <targetApplication>
+        <appName>Logitech Media Server</appName>
+        <minVersion>7.8</minVersion>
+        <maxVersion>*</maxVersion>
+    </targetApplication>
+</extension>
