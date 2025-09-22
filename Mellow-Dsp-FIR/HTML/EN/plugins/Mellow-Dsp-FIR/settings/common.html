@@ -1,0 +1,43 @@
+[%- 
+    # Common settings template for Mellow-Dsp-FIR
+    # This provides shared variables and functions
+    
+    # Get current preferences
+    prefs.enabled = prefs.enabled || 0;
+    prefs.output_format = prefs.output_format || 'wav';
+    prefs.sample_rate = prefs.sample_rate || '768000';
+    prefs.bit_depth = prefs.bit_depth || '32';
+    prefs.fir_enabled = prefs.fir_enabled || 0;
+    prefs.fir_gain = prefs.fir_gain || '0';
+    prefs.buffer_size = prefs.buffer_size || '2048';
+    prefs.enable_dither = prefs.enable_dither || 0;
+-%]
+
+<style>
+.pref {
+    margin: 10px 0;
+    padding: 5px;
+}
+.pref label {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+}
+.pref input[type="text"], 
+.pref input[type="number"], 
+.pref select, 
+.pref textarea {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.pref input[type="file"] {
+    width: auto;
+}
+.current {
+    color: #666;
+    font-style: italic;
+    margin-left: 10px;
+}
+</style>

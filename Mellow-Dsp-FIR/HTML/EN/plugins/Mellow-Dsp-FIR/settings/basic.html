@@ -1,0 +1,45 @@
+[% PROCESS plugins/Mellow-Dsp-FIR/settings/common.html %]
+
+<div class="settings">
+    <h2>Mellow-Dsp-FIR Basic Settings</h2>
+    
+    <fieldset>
+        <legend>General Settings</legend>
+        
+        <div class="pref">
+            <input type="checkbox" name="enabled" id="enabled" [% prefs.enabled %]>
+            <label for="enabled">Enable Mellow-Dsp-FIR Processing</label>
+        </div>
+        
+        <div class="pref">
+            <label for="output_format">Output Format:</label>
+            <select name="output_format" id="output_format">
+                <option value="wav" [% IF prefs.output_format == 'wav' %]selected[% END %]>WAV (Pass-through)</option>
+                <option value="flac" [% IF prefs.output_format == 'flac' %]selected[% END %]>FLAC (Lossless)</option>
+            </select>
+        </div>
+        
+        <div class="pref">
+            <label for="sample_rate">Sample Rate:</label>
+            <select name="sample_rate" id="sample_rate">
+                <option value="44100" [% IF prefs.sample_rate == '44100' %]selected[% END %]>44.1 kHz</option>
+                <option value="48000" [% IF prefs.sample_rate == '48000' %]selected[% END %]>48 kHz</option>
+                <option value="96000" [% IF prefs.sample_rate == '96000' %]selected[% END %]>96 kHz</option>
+                <option value="192000" [% IF prefs.sample_rate == '192000' %]selected[% END %]>192 kHz</option>
+                <option value="384000" [% IF prefs.sample_rate == '384000' %]selected[% END %]>384 kHz</option>
+                <option value="768000" [% IF prefs.sample_rate == '768000' %]selected[% END %]>768 kHz</option>
+            </select>
+        </div>
+        
+        <div class="pref">
+            <label for="bit_depth">Bit Depth:</label>
+            <select name="bit_depth" id="bit_depth">
+                <option value="16" [% IF prefs.bit_depth == '16' %]selected[% END %]>16-bit</option>
+                <option value="24" [% IF prefs.bit_depth == '24' %]selected[% END %]>24-bit</option>
+                <option value="32" [% IF prefs.bit_depth == '32' %]selected[% END %]>32-bit</option>
+            </select>
+        </div>
+    </fieldset>
+    
+    <input type="submit" name="saveSettings" value="Save Settings" class="stdclick">
+</div>

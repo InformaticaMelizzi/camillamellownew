@@ -1,0 +1,33 @@
+[% PROCESS plugins/Mellow-Dsp-FIR/settings/common.html %]
+
+<div class="settings">
+    <h2>Advanced Settings</h2>
+    
+    <fieldset>
+        <legend>CamillaDSP Configuration</legend>
+        
+        <div class="pref">
+            <label for="camilla_config">CamillaDSP Config File:</label>
+            <textarea name="camilla_config" id="camilla_config" 
+                      rows="10" cols="80">[% prefs.camilla_config %]</textarea>
+        </div>
+        
+        <div class="pref">
+            <label for="buffer_size">Buffer Size:</label>
+            <select name="buffer_size" id="buffer_size">
+                <option value="512" [% IF prefs.buffer_size == '512' %]selected[% END %]>512</option>
+                <option value="1024" [% IF prefs.buffer_size == '1024' %]selected[% END %]>1024</option>
+                <option value="2048" [% IF prefs.buffer_size == '2048' %]selected[% END %]>2048</option>
+                <option value="4096" [% IF prefs.buffer_size == '4096' %]selected[% END %]>4096</option>
+                <option value="8192" [% IF prefs.buffer_size == '8192' %]selected[% END %]>8192</option>
+            </select>
+        </div>
+        
+        <div class="pref">
+            <input type="checkbox" name="enable_dither" id="enable_dither" [% prefs.enable_dither %]>
+            <label for="enable_dither">Enable E-Weighted Dithering</label>
+        </div>
+    </fieldset>
+    
+    <input type="submit" name="saveSettings" value="Save Advanced Settings" class="stdclick">
+</div>

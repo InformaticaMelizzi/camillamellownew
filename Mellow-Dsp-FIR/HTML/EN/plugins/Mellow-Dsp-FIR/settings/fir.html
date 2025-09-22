@@ -1,0 +1,41 @@
+[% PROCESS plugins/Mellow-Dsp-FIR/settings/common.html %]
+
+<div class="settings">
+    <h2>FIR Filter Settings</h2>
+    
+    <fieldset>
+        <legend>FIR Processing</legend>
+        
+        <div class="pref">
+            <input type="checkbox" name="fir_enabled" id="fir_enabled" [% prefs.fir_enabled %]>
+            <label for="fir_enabled">Enable FIR Processing</label>
+        </div>
+        
+        <div class="pref">
+            <label for="fir_file_left">Left Channel FIR File:</label>
+            <input type="file" name="fir_file_left" id="fir_file_left" accept=".wav,.WAV">
+            <input type="hidden" name="fir_file_left_current" value="[% prefs.fir_file_left %]">
+            [% IF prefs.fir_file_left %]
+            <span class="current">Current: [% prefs.fir_file_left %]</span>
+            [% END %]
+        </div>
+        
+        <div class="pref">
+            <label for="fir_file_right">Right Channel FIR File:</label>
+            <input type="file" name="fir_file_right" id="fir_file_right" accept=".wav,.WAV">
+            <input type="hidden" name="fir_file_right_current" value="[% prefs.fir_file_right %]">
+            [% IF prefs.fir_file_right %]
+            <span class="current">Current: [% prefs.fir_file_right %]</span>
+            [% END %]
+        </div>
+        
+        <div class="pref">
+            <label for="fir_gain">FIR Gain (dB):</label>
+            <input type="number" name="fir_gain" id="fir_gain" 
+                   value="[% prefs.fir_gain %]" 
+                   min="-20" max="20" step="0.1">
+        </div>
+    </fieldset>
+    
+    <input type="submit" name="saveSettings" value="Save FIR Settings" class="stdclick">
+</div>
