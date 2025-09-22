@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension>
+    <id>camillamellowfirfir-2024-09-22-unique-id</id>
+    <name>PLUGIN_CAMILLAMELLOW</name>
+    <module>Plugins::CamillaMellowFIRFIR::Plugin</module>
+    <version>0.2.0</version>
+    <description>PLUGIN_CAMILLAMELLOW_DESC</description>
+    <creator>Informatica Melizzi</creator>
+    <email>support@informaticamelizzi.it</email>
+    <defaultState>enabled</defaultState>
+    <playerMenu>SETTINGS</playerMenu>
+    <homepageURL>https://github.com/InformaticaMelizzi/camillamellowfirfirnew</homepageURL>
+    <optionsURL>plugins/CamillaMellowFIRFIR/settings/basic.html</optionsURL>
+    <type>2</type>
+    <targetApplication>
+        <id>Logitech Media Server</id>
+        <minVersion>7.8</minVersion>
+        <maxVersion>*</maxVersion>
+    </targetApplication>
+</extension>

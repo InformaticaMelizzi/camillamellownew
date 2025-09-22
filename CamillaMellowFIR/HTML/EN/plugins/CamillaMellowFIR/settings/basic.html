@@ -1,10 +1,18 @@
-[% PROCESS plugins/CamillaMellow/settings/common.html %]
+[% PROCESS plugins/CamillaMellowFIRFIR/settings/common.html %]
 
 <input type="hidden" name="player" value="[% player | html %]">
 
 <div class="prefDesc">
     <input name="enabled" id="enabled" type="checkbox" [% IF enabled %] checked [% END %]>
-    <label for="enabled">Enable CamillaMellow DSP</label>
+    <label for="enabled">Enable CamillaMellowFIRFIR DSP</label>
+</div>
+
+<div class="prefDesc">
+    <label for="output_format">Output Format (Pass-through to DAC):</label>
+    <select name="output_format" id="output_format">
+        <option value="wav" [% IF output_format == 'wav' %]selected[% END %]>WAV (Uncompressed)</option>
+        <option value="flac" [% IF output_format == 'flac' %]selected[% END %]>FLAC (Lossless Compressed)</option>
+    </select>
 </div>
 
 <div class="prefDesc">

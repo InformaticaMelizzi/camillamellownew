@@ -25,6 +25,7 @@ sub settingsPage {
     
     if ($params->{saveSettings}) {
         $prefs->client($client)->set('enabled', $params->{enabled} ? 1 : 0);
+        $prefs->client($client)->set('output_format', $params->{output_format} || 'wav');
         $prefs->client($client)->set('upsample_rate', $params->{upsample_rate} || '44100');
         $prefs->client($client)->set('phase_response', $params->{phase_response} || 'linear');
         $prefs->client($client)->set('output_depth', $params->{output_depth} || '24');
@@ -35,6 +36,7 @@ sub settingsPage {
     }
     
     $params->{enabled} = $prefs->client($client)->get('enabled');
+    $params->{output_format} = $prefs->client($client)->get('output_format');
     $params->{upsample_rate} = $prefs->client($client)->get('upsample_rate');
     $params->{phase_response} = $prefs->client($client)->get('phase_response');
     $params->{output_depth} = $prefs->client($client)->get('output_depth');
