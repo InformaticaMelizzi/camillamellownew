@@ -7,9 +7,9 @@
             <category>audio</category>
             <creator>Informatica Melizzi</creator>
             <email>support@informaticamelizzi.it</email>
-            <homepageURL>https://github.com/InformaticaMelizzi/mellow-dsp-fir</homepageURL>
-            <link>https://github.com/InformaticaMelizzi/mellow-dsp-fir</link>
-            <url>https://raw.githubusercontent.com/InformaticaMelizzi/mellow-dsp-fir/main/packages/Mellow-Dsp-FIR-0.2.0-MINI.zip</url>
+            <homepageURL>https://github.com/InformaticaMelizzi/camillamellownew</homepageURL>
+            <link>https://github.com/InformaticaMelizzi/camillamellownew</link>
+            <url>https://raw.githubusercontent.com/InformaticaMelizzi/camillamellownew/main/packages/Mellow-Dsp-FIR-0.2.0-MINI.zip</url>
             <sha>e7d1e01e9119672fd3654c90f840e6087400892e</sha>
         </plugin>
     </plugins>
