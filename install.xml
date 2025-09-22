@@ -2,8 +2,8 @@
 <extension>
     <name>Mellow-Dsp-FIR</name>
     <module>Plugins::MellowDspFIR::Plugin</module>
-    <version>0.2.0-WAV</version>
-    <description>WAV PCM processing with FIR support</description>
+    <version>0.2.0-WAV-NOFORMAT</version>
+    <description>WAV PCM processing without format registration</description>
     <creator>Informatica Melizzi</creator>
     <email>support@informaticamelizzi.it</email>
     <homepageURL>https://github.com/InformaticaMelizzi/camillamellownew</homepageURL>

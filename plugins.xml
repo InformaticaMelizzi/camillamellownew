@@ -3,13 +3,13 @@
     <plugins>
         <plugin name="Mellow-Dsp-FIR" version="0.2.0" minTarget="7.8" maxTarget="*">
             <title lang="EN">Mellow-Dsp-FIR DSP</title>
-            <desc lang="EN">WAV PCM processing with FIR support</desc>
+            <desc lang="EN">WAV PCM processing without format registration</desc>
             <category>audio</category>
             <creator>Informatica Melizzi</creator>
             <email>support@informaticamelizzi.it</email>
             <homepageURL>https://github.com/InformaticaMelizzi/camillamellownew</homepageURL>
             <link>https://github.com/InformaticaMelizzi/camillamellownew</link>
-            <url>https://raw.githubusercontent.com/InformaticaMelizzi/camillamellownew/main/packages/Mellow-Dsp-FIR-0.2.0-WAV.zip</url>
+            <url>https://raw.githubusercontent.com/InformaticaMelizzi/camillamellownew/main/packages/Mellow-Dsp-FIR-0.2.0-WAV-NOFORMAT.zip</url>
             <sha>ba709ffc173fdfa14e67bc8525a55bb15bbb1579</sha>
         </plugin>
     </plugins>
