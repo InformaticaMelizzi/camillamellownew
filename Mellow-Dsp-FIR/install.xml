@@ -2,8 +2,8 @@
 <extension>
     <name>Mellow-Dsp-FIR</name>
     <module>Plugins::MellowDspFIR::Plugin</module>
-    <version>0.2.0</version>
-    <description>Advanced FIR processing with REW integration, CamillaDSP and high-res audio support</description>
+    <version>0.2.0-MINI</version>
+    <description>Minimal test plugin for PCM processing</description>
     <creator>Informatica Melizzi</creator>
     <email>support@informaticamelizzi.it</email>
     <homepageURL>https://github.com/InformaticaMelizzi/mellow-dsp-fir</homepageURL>

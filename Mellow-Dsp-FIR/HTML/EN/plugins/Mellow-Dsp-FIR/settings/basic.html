@@ -1,45 +1,5 @@
-[% PROCESS plugins/Mellow-Dsp-FIR/settings/common.html %]
-
 <div class="settings">
-    <h2>Mellow-Dsp-FIR - PCM Processing Settings</h2>
-
-    <fieldset>
-        <legend>PCM Audio Pipeline</legend>
-
-        <div class="pref">
-            <input type="checkbox" name="enabled" id="enabled" [% prefs.enabled %]>
-            <label for="enabled">Enable Mellow-Dsp-FIR PCM Processing</label>
-        </div>
-
-        <div class="pref">
-            <label for="pcm_sample_rate">PCM Sample Rate:</label>
-            <select name="pcm_sample_rate" id="pcm_sample_rate">
-                <option value="44100" [% IF prefs.pcm_sample_rate == '44100' %]selected[% END %]>44.1 kHz</option>
-                <option value="48000" [% IF prefs.pcm_sample_rate == '48000' %]selected[% END %]>48 kHz</option>
-                <option value="96000" [% IF prefs.pcm_sample_rate == '96000' %]selected[% END %]>96 kHz</option>
-                <option value="192000" [% IF prefs.pcm_sample_rate == '192000' %]selected[% END %]>192 kHz</option>
-                <option value="384000" [% IF prefs.pcm_sample_rate == '384000' %]selected[% END %]>384 kHz</option>
-                <option value="768000" [% IF prefs.pcm_sample_rate == '768000' %]selected[% END %]>768 kHz (Recommended)</option>
-            </select>
-        </div>
-
-        <div class="pref">
-            <label for="pcm_bit_depth">Processing Bit Depth:</label>
-            <select name="pcm_bit_depth" id="pcm_bit_depth">
-                <option value="24" [% IF prefs.pcm_bit_depth == '24' %]selected[% END %]>24-bit</option>
-                <option value="32" [% IF prefs.pcm_bit_depth == '32' %]selected[% END %]>32-bit (Recommended)</option>
-            </select>
-        </div>
-
-        <div class="pref">
-            <label for="pcm_dither">Dithering Algorithm:</label>
-            <select name="pcm_dither" id="pcm_dither">
-                <option value="none" [% IF prefs.pcm_dither == 'none' %]selected[% END %]>None</option>
-                <option value="e_weighted" [% IF prefs.pcm_dither == 'e_weighted' %]selected[% END %]>E-Weighted (Recommended)</option>
-                <option value="triangular" [% IF prefs.pcm_dither == 'triangular' %]selected[% END %]>Triangular</option>
-            </select>
-        </div>
-    </fieldset>
-
-    <input type="submit" name="saveSettings" value="Save PCM Settings" class="stdclick">
+    <h2>Mellow-Dsp-FIR - MINIMAL TEST</h2>
+    <p>Plugin caricato con successo!</p>
+    <p>Versione: 0.2.0-PCM-MINI</p>
 </div>
