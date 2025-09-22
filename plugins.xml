@@ -3,14 +3,14 @@
     <plugins>
         <plugin name="Mellow-Dsp-FIR" version="0.2.0" minTarget="7.8" maxTarget="*">
             <title lang="EN">Mellow-Dsp-FIR DSP</title>
-            <desc lang="EN">Advanced FIR processing with REW integration, CamillaDSP and high-res audio support</desc>
+            <desc lang="EN">Advanced PCM processing with FIR filters, REW integration, CamillaDSP and high-res audio support</desc>
             <category>audio</category>
             <creator>Informatica Melizzi</creator>
             <email>support@informaticamelizzi.it</email>
             <homepageURL>https://github.com/InformaticaMelizzi/mellow-dsp-fir</homepageURL>
             <link>https://github.com/InformaticaMelizzi/mellow-dsp-fir</link>
-            <url>https://raw.githubusercontent.com/InformaticaMelizzi/mellow-dsp-fir/main/packages/Mellow-Dsp-FIR-0.2.0.zip</url>
-            <sha>b296cf8147fb2743ec8aa1ae55a8c7ac1598aee5</sha>
+            <url>https://raw.githubusercontent.com/InformaticaMelizzi/mellow-dsp-fir/main/packages/Mellow-Dsp-FIR-0.2.0-PCM.zip</url>
+            <sha>546cb3b82c60f714faf69866301987d87913d1dc</sha>
         </plugin>
     </plugins>
 </extensions>
