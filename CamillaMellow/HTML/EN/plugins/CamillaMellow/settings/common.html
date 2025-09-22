@@ -1,0 +1,11 @@
+[% PROCESS settings/header.html %]
+
+[% IF player %]
+    <h2>CamillaMellow DSP Settings for [% player %]</h2>
+[% ELSE %]
+    <h2>CamillaMellow DSP Settings</h2>
+[% END %]
+
+[% IF message %]
+    <div class="warning">[% message %]</div>
+[% END %]

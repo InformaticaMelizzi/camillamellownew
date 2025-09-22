@@ -1,21 +1,21 @@
-<h2>CamillaMellow DSP Settings</h2>
-<p>FIR Processing with REW Integration</p>
+[% PROCESS plugins/CamillaMellow/settings/common.html %]
 
-<div class="prefDesc">Upload FIR Files</div>
-<div class="prefName">
-    <label for="fir_left">FIR Left File:</label>
-</div>
-<div class="prefValue">
-    <input type="file" name="fir_left" id="fir_left" accept=".wav">
-</div>
+<input type="hidden" name="player" value="[% player | html %]">
 
-<div class="prefName">
-    <label for="fir_right">FIR Right File:</label>
-</div>
-<div class="prefValue">
-    <input type="file" name="fir_right" id="fir_right" accept=".wav">
+<div class="prefDesc">
+    <input name="enabled" id="enabled" type="checkbox" [% IF enabled %] checked [% END %]>
+    <label for="enabled">Enable CamillaMellow DSP</label>
 </div>
 
 <div class="prefDesc">
-    Upload FIR files generated with REW to /media/hdd/system/fir_left.wav and fir_right.wav
+    <label for="fir_file_left">FIR File Left:</label>
+    <input type="text" class="stdedit" name="fir_file_left" id="fir_file_left" value="[% fir_file_left | html %]" size="60">
 </div>
+
+<div class="prefDesc">
+    <label for="fir_file_right">FIR File Right:</label>
+    <input type="text" class="stdedit" name="fir_file_right" id="fir_file_right" value="[% fir_file_right | html %]" size="60">
+</div>
+
+<input type="submit" name="saveSettings" value="[% "SAVE" | string %]" class="stdclick">
+<input type="submit" name="cancel" value="[% "CANCEL" | string %]" class="stdclick">
