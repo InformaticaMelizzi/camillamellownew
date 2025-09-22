@@ -10,12 +10,33 @@
 <div class="prefDesc">
     <label for="fir_file_left">FIR File Left:</label>
     <input type="text" class="stdedit" name="fir_file_left" id="fir_file_left" value="[% fir_file_left | html %]" size="60">
+    <input type="button" value="Browse..." onclick="browseFile('fir_file_left')">
 </div>
 
 <div class="prefDesc">
     <label for="fir_file_right">FIR File Right:</label>
     <input type="text" class="stdedit" name="fir_file_right" id="fir_file_right" value="[% fir_file_right | html %]" size="60">
+    <input type="button" value="Browse..." onclick="browseFile('fir_file_right')">
 </div>
 
 <input type="submit" name="saveSettings" value="[% "SAVE" | string %]" class="stdclick">
 <input type="submit" name="cancel" value="[% "CANCEL" | string %]" class="stdclick">
+
+<script>
+function browseFile(fieldId) {
+    // Crea input file nascosto
+    var input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.wav,.WAV';
+    
+    input.onchange = function(e) {
+        var file = e.target.files[0];
+        if (file) {
+            // Mostra solo il nome file per sicurezza
+            document.getElementById(fieldId).value = file.name;
+        }
+    };
+    
+    input.click();
+}
+</script>
