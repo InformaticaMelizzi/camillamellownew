@@ -1,8 +1,5 @@
 PLUGIN_CAMILLAMELLOW
-	EN	CamillaMellow DSP
-
+    EN  CamillaMellow DSP
+    
 PLUGIN_CAMILLAMELLOW_DESC
-	EN	FIR processing with REW integration and CamillaDSP
-
-PLUGIN_CAMILLAMELLOW_SETTINGS
-	EN	CamillaMellow Settings
+    EN  FIR processing with REW integration and CamillaDSP

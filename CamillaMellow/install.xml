@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <extension>
-    <id>91d8fb10-camilla-11e3-ac10-0800200c9a66</id>
+    <id>camillamellow-2024-09-22-unique-id</id>
     <name>PLUGIN_CAMILLAMELLOW</name>
     <module>Plugins::CamillaMellow::Plugin</module>
     <version>0.2.0</version>
